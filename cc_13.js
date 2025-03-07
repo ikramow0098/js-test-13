@@ -42,4 +42,13 @@ document.getElementById("bulkUpdateBtn").addEventListener("click", function() {
   });
 });
 
+// ========================
+// Task 4: Employee Card Removal with Event Bubbling
+// ========================
+
+document.getElementById("employeeContainer").addEventListener("click", function(event) {
+  if (event.target.classList.contains("employee-card")) {
+      console.log("Employee card clicked");
+  }
+});
 
