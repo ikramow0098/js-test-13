@@ -30,4 +30,16 @@ function addEmployee(name, position) {
   employeeContainer.appendChild(card);
 }
 
+// ========================
+// Task 3: Bulk Update on Employee Cards
+// ========================
+
+document.getElementById("bulkUpdateBtn").addEventListener("click", function() {
+  const employeeCards = Array.from(document.querySelectorAll(".employee-card"));
+  employeeCards.forEach(card => {
+      card.style.backgroundColor = "#f0ad4e";  // Highlighting cards
+      card.style.border = "2px solid #d9534f";
+  });
+});
+
 
